@@ -28,7 +28,7 @@ public:
 
     void enqueue(int data) {
         if(rear==size){
-            cout<<"queue is full"<<endl;
+            // cout<<"queue is full"<<endl;
         }else{
             arr[rear] = data;
             rear++;
