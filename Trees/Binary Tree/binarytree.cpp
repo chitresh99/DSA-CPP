@@ -46,6 +46,15 @@ void levelOrderTraversal(node* root){
         cout<<temp -> data << " ";
         q.pop();
         
+
+        //To apply stops between each level (presentation purposes)
+        if(temp = NULL){//the old level is complete
+          cout<<endl;
+          if(!q.empty()){//Queue still has some child nodes basically there are some elements
+             q.push(NULL);//adding one more seperator if the queue is not empty
+          }
+        }
+        else{
         if(temp -> left){ // the the left of temp is non null push it into queue
          q.push(temp->left);
         }
@@ -53,6 +62,7 @@ void levelOrderTraversal(node* root){
         if(temp -> right){ // the the right of temp is non null push it into queue
          q.push(temp->right);
         }
+        }   
     }
 }
 
@@ -66,6 +76,7 @@ int main()
     //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
     cout<<"Printing the level order traversal output"<<endl;
     levelOrderTraversal(root);
-
+    
+    
     return 0;
 }
