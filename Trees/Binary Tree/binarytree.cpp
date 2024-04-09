@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 class node
@@ -36,6 +37,25 @@ node* buildTree(node* root)
     return root;
 }
 
+void levelOrderTraversal(node* root){
+    queue<node*> q; //in level order traversal most of the time we use breadth first search
+    q.push(root); //pushing a root element in the queue basically pushing an element
+
+    while(!q.empty()){ //while queue is not empty
+        node* temp = q.front();
+        cout<<temp -> data << " ";
+        q.pop();
+        
+        if(temp -> left){ // the the left of temp is non null push it into queue
+         q.push(temp->left);
+        }
+
+        if(temp -> right){ // the the right of temp is non null push it into queue
+         q.push(temp->right);
+        }
+    }
+}
+
 int main()
 {
 
@@ -43,6 +63,9 @@ int main()
 
     // creating a tree
     root = buildTree(root);
+    //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+    cout<<"Printing the level order traversal output"<<endl;
+    levelOrderTraversal(root);
 
     return 0;
 }
