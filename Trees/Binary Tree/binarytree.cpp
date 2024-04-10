@@ -40,15 +40,13 @@ node* buildTree(node* root)
 void levelOrderTraversal(node* root){
     queue<node*> q; //in level order traversal most of the time we use breadth first search
     q.push(root); //pushing a root element in the queue basically pushing an element
-
+    q.push(NULL);
     while(!q.empty()){ //while queue is not empty
         node* temp = q.front();
-        
         q.pop();
-        
 
         //To apply stops between each level (presentation purposes)
-        if(temp = NULL){//the old level is complete
+        if(temp == NULL){//the old level is complete
           cout<<endl;
           if(!q.empty()){//Queue still has some child nodes basically there are some elements
              q.push(NULL);//adding one more seperator if the queue is not empty
