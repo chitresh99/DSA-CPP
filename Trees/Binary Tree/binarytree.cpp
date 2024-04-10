@@ -43,7 +43,7 @@ void levelOrderTraversal(node* root){
 
     while(!q.empty()){ //while queue is not empty
         node* temp = q.front();
-        cout<<temp -> data << " ";
+        
         q.pop();
         
 
@@ -55,12 +55,13 @@ void levelOrderTraversal(node* root){
           }
         }
         else{
-        if(temp -> left){ // the the left of temp is non null push it into queue
-         q.push(temp->left);
+            cout<<temp -> data << " ";
+           if(temp -> left){ // the the left of temp is non null push it into queue
+            q.push(temp->left);
         }
 
-        if(temp -> right){ // the the right of temp is non null push it into queue
-         q.push(temp->right);
+           if(temp -> right){ // the the right of temp is non null push it into queue
+           q.push(temp->right);
         }
         }   
     }
