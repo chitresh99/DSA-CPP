@@ -15,3 +15,6 @@ public:
         }
     }
 };
+
+/*Explanation :- so i is the first intial number and j is the number next to it if the number next to it 
+that's [j] is equal to zero we ignore and if the number j is not equal to zero we move it forward that's we swap i and j and we move i forward*/
