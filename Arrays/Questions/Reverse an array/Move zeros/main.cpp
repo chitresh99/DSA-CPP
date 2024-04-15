@@ -1,0 +1,17 @@
+#include <iostream> 
+#include <vector> 
+using namespace std;
+
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int i = 0; //this is our intial then we increment this
+
+        for(int j = 0;j <nums.size();j++){
+            if(nums[j] != 0){
+                swap(nums[j],nums[i]);
+                    i++;//moving i forward 
+            }
+        }
+    }
+};
