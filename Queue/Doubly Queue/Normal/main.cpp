@@ -80,7 +80,7 @@ public:
         }
         int ans = arr[rear];
         arr[rear] = -1;
-        if(front == rear){ //single element is present
+        if(front == rear){ //single element is present and we want to pop that
             front = rear = -1;
         }
         else if(rear==0){
