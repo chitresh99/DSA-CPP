@@ -23,7 +23,7 @@ class CircularQueue{
            front = rear = 0;
            
          }
-         else if(rear == size - 1 && front != 0){ // rear is at the last element and front is at zero
+         else if(rear == size - 1 && front != 0){ // rear is at the last element and front is not at zero
              rear = 0; //we start pushing from the first index like the zeroth index because front is not at zero indicating there is space there 
          }
          else{
