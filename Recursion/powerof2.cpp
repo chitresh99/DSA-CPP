@@ -4,10 +4,12 @@ using namespace std;
 int power(int n){
     if(n==0) //base case
        return 1;
-    int smallprob = power(n-1);
-    int bigprob = 2 * smallprob;
+    // int smallprob = power(n-1);
+    // int bigprob = 2 * smallprob;
 
-    return bigprob;    
+    // return bigprob; 
+    
+    return 2 * power(n - 1);   //simple 
 }
 
 
