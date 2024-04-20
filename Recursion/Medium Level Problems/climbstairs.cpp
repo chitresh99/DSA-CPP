@@ -12,7 +12,7 @@ void reachedhome(int src,int dost){
 
     src++;
 
-    reachedhome(src,dost);
+    reachedhome(src,dost);//passing the source here which we updated
 }
 
 
