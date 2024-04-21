@@ -91,7 +91,7 @@ void deletenode(int position, Node *&head)
     {
         Node *temp = head; // storing
         head = head->next; // moving the pointer to the next node
-        temp->next = NULL;
+        temp->next = NULL;//removing the pointer from the node we want to delete
         delete temp;
     }
     else
