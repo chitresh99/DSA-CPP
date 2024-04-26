@@ -9,7 +9,7 @@ bool issorted(int arr[], int size){
      
      //base case 
      if(size == 0 || size == 1){
-        return true;
+        return true; //if the size is zero or one we still consider it sorted
      }
         
 
