@@ -14,7 +14,7 @@ bool issorted(int arr[], int size){
         
 
     if(arr[0] > arr [1]){
-        return false; //because our array is not sorted
+        return false; //if the first element is bigger then we return false
     }
 
     else{
