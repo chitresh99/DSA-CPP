@@ -10,7 +10,7 @@ void print(int arr[], int s, int e) {
 
 bool binarysearch(int arr[], int s, int e, int key)
 {
-
+    print(arr,s,e);
     // base case
 
     //element not found
