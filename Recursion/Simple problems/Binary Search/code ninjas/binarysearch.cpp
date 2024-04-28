@@ -31,3 +31,5 @@ int search(int *input,int n,int val,int key)
    int ans = binarysearch(input,0,n-1,key);
  
 }
+
+//link :- https://www.naukri.com/code360/problems/binary-search_972?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_11
