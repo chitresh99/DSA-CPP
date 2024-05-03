@@ -9,7 +9,7 @@ class hero{
     // int health;
     // int level;
 
-    int value;
+    //int value;
 };
 
 
