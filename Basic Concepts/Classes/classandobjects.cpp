@@ -1,16 +1,17 @@
 #include <iostream>
+#include "hero.cpp"; //calling the class from a different file
 using namespace std;
 
 //creating a class
-class hero{
+// class hero{
      
-    //some properties for the class
-    // char name[100];
-    // int health;
-    // int level;
+//     //some properties for the class
+//     // char name[100];
+//     // int health;
+//     // int level;
 
-    //int value;
-};
+//     //int value;
+// };
 
 
 int main() {
@@ -18,8 +19,9 @@ int main() {
 
     //creating objects from class
 
-    hero h1;
+    hero raftaar;
     
     //checking the size of the object
-    cout << "size : " <<sizeof(h1) <<endl; 
+    cout << "size : " <<sizeof(raftaar) <<endl; 
+    cout << "Health is : " <<raftaar.health<<endl; 
 }

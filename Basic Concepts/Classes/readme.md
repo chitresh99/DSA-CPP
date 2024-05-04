@@ -12,3 +12,12 @@ We can also call these instance basically objects and the word instance can be u
 
 
 if the class is empty you will still get one byte for the identification
+
+
+**Including a cpp file**
+
+'''
+#include "nameofthefile.cpp";
+
+'''
+
