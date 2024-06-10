@@ -28,3 +28,5 @@ int main()
 
     return 0;
 }
+
+//things i missed :- calling the function inside the function
