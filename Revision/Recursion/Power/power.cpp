@@ -23,8 +23,6 @@ int main()
     cin >> n;
 
     int answer = power(n);
-    
-
     cout << "Power of 2 raised is "<<answer <<endl;
     return 0;
 }
