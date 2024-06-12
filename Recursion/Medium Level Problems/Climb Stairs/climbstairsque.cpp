@@ -20,7 +20,8 @@ int main(){
 
     cin >> n;
 
-    countDistinctWays(n);
+    int ans = countDistinctWays(n);
+    cout <<ans<<endl;
 }
 
 /* attempted 
