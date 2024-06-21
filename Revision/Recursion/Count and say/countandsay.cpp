@@ -3,15 +3,19 @@
 using namespace std;
 
 string countandsay(int num) // Changed parameter name from n to num
-{
+{   
+
+    //Base Case 
     if (num == 1)
     {
         return "1";
     }
 
+    //Recursive Step
     string prev = countandsay(num - 1);
     stringstream result;
-
+    
+    // Run length encoding
     int length = prev.length(); 
     for (int i = 0; i < length; ++i) 
     {
