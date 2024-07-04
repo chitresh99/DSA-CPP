@@ -46,3 +46,5 @@ vector < int > sortedArray(vector < int > a, vector < int > b) {
     return unionArr; //returning the union array
     
 }
+
+//link :- https://www.naukri.com/code360/problems/sorted-array_6613259?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
