@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//returning the first occurrence of the number
+
 int linearsearch(int arr[], int size,int num){
 
 
