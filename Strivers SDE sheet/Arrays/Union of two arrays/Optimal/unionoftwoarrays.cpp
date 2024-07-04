@@ -8,8 +8,7 @@ vector < int > sortedArray(vector < int > a, vector < int > b) {
     int i = 0;
     int j = 0;
 
-    vector<int> unionArr; //creating a union array
-    
+    vector<int> unionArr; //creating a union array 
     //while i is less than n1 and j is less than n2 we iterate,so it doesn't go out of bounds
     while(i < n1 && j < n2){
       
