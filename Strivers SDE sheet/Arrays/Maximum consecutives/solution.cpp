@@ -9,14 +9,16 @@ int findconsecutives(int arr[], int size)
 
     for (int i = 0; i < size; i++)
     {
-        if (arr[i] == 1)
+         //arr[i] refers to the element at index i
+        if (arr[i] == 1) //if array of element
         {
-            cnt++;
-            maxi = max(maxi, cnt);
+            cnt++; //incrementing the counter
+            maxi = max(maxi, cnt); //passing the maximum and the counters
+            //here we compare two number inside max right the last maximum and the current consecutive counted
         }
         else
         {
-            cnt = 0;
+            cnt = 0; // if the conecutivness breakes right we set it to zero right
         }
     }
     return maxi;
